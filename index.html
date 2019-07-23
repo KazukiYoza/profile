@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Profile</title>
+	<link rel="stylesheet" media="screen and ( max-width:768px )" href="./css/style_sp.css">
+	<link rel="stylesheet" media="screen and ( min-width:769px )" href="./css/style_pc.css">
+	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+
+	<!-- jQueryを先に読み込む方がいい。 -->
+	<script type="text/javascript" src="./js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="js/jquery-fadethis-master/dist/jquery.fadethis.min.js"> </script>
+	
+	<!-- CDNでdrawerを導入（jQueryだけでなくプラグインもCDNで導入可能） -->
+	<!-- drawer.css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+	<!-- jquery & iScroll -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+	<!-- drawer.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+</head>
+<body class="drawer drawer--right">
+	<header>		
+		<img class="logo" src="./img/logo.PNG" alt="">
+		<div class="mail"><a href="mailto:yzkzk0323&#64;gmail.com?subject=問い合わせ"><i class="far fa-envelope" style="color:white; font-size:30px; margin-top:10px;"></i></a></div>
+		<div class="menu">
+			<button type="button" class="drawer-toggle drawer-hamburger">
+				<span class="sr-only">toggle navigation</span>
+				<span class="drawer-hamburger-icon"></span>
+			</button>
+			<nav class="drawer-nav">
+				<ul class="drawer-menu">
+					<li><a href="#">menu1</a></li>
+					<li><a href="#">menu2</a></li>
+					<li><a href="#">menu3</a></li>
+				</ul>
+			</nav>
+			<nav class="drawer-nav" role="navigation">
+				<ul class="drawer-menu">
+					<li><a href="#sec1" id="item0" class="drawer-menu-item">見出しのエリア</a></li>
+					<li><a href="#sec2" id="item1" class="drawer-menu-item">flexのエリア</a></li>
+					<li><a href="#sec3" id="item2" class="drawer-menu-item">センタリングエリア</a></li>
+					<li><a href="#sec4" id="item3" class="drawer-menu-item">制作実績</a></li>
+				</ul>
+			</nav>
+
+		</div>
+	</header>
+	<article>
+		<section id="sec1">
+			<img src="./img/nishihara.jpg" alt="">
+			<p id="effect_01">あなたの<br>
+			思いをカタチにする<br>
+			おてつだいを。</p>
+		</section>
+		
+		<section id="sec2"> 
+			<h1>About me</h1>
+			<h3>自己紹介</h3>
+				<div class="contents profile">
+					<div class="service-image">
+						<img src="./img/profile.jpg" alt="">
+					</div>
+					<div class="service-txt">
+						<p>1988年神奈川生まれ、沖縄育ち<br>
+						琉球大学を卒業後、舞台役者、書店員を経て、<br>
+						ライター、WEB制作の活動を始めました。<br>
+						週4で食べるくらいタコライスが大好きで、趣味はタップダンスと鉄道旅行です。<br>
+						</p>
+					</div>
+				</div>
+		</section>
+		
+		<section id="sec3">
+			<h1>Service</h1>
+			<h3>サービス内容</h3>
+			<div class="contents service-wrapper">
+				<div class="service-content effect-fade">
+					<div class="service-image">
+						<img src="./img/clock.jpg" alt="">
+					</div>
+					<div class="service-txt">
+						<h2>Webライティング</h2>
+						<p></p>
+					</div>
+				</div>
+
+				<div class="service-content reverse-content effect-fade">
+					<div class="service-image">
+						<img src="./img/idea.jpg" alt="">
+					</div>
+					<div class="service-txt">
+						<h2>Webサイト制作</h2>
+						<p>サイトのデザインから公開まで、トータルなサービスを提供します。<br>
+						個人のお客様からのご依頼も大歓迎です。</p>
+					</div>
+				</div>
+				<div class="service-content effect-fade">
+					<div class="service-image">
+						<img src="./img/radio.jpg" alt="">
+					</div>
+					<div class="service-txt">
+						<h2>謎解きイベント公演</h2>
+						<p>テキストテキストテキストテキストテキ</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="sec4">
+			<h1>Portfolio</h1>
+			<h3>制作実績</h3>
+			<div class="test">
+				<div id="m1" style="background-color: rgb(172, 229, 255)">
+					<a href="https://yzkzk365.com/"></a>
+					<p id="effect_02">Webライティング</p>
+				</div>
+				<div id="m2" style="background-color: rgb(253, 214, 207)">
+					<p id="effect_03">ホームページ制作</p>
+					<a href="./homepage-builder.html"></a>
+				</div>
+				<div id="m3" style="background-color: rgb(197, 212, 165)">
+					<p id="effect_04">coming soon..</p>
+					<a href="#"></a>
+				</div>
+				<div id="m4" style="background-color: rgb(226, 182, 226)">
+					<p id="effect_05">coming soon..</p>
+					<a href="#"></a>
+				</div>
+				<!-- <div id="m5">
+					<a href="./profile.html"><p id="effect_06">ヨザカズキと申します。<br>
+				よろしくお願いします。<br><br>
+			プロフィール</p></a>
+				</div> -->
+			</div>
+		</section>
+
+		<section id="sec5">
+			<h1>Contact</h1>
+			<p>お問い合わせ</p>
+			<div class="contents">
+				<img src="./img/mail.jpg" alt="">
+				<p>Webサイト制作、Webライティングに関するご相談はメールにて受け付けております。<br>
+					まずはお気軽にお問い合わせください。<br>
+
+				</p>
+			</div>
+			<div class>
+					<p><a class="btn" id="" href="mailto:yzkzk0323&#64;gmail.com?subject=問い合わせ">お問い合わせはこちらから</a></p>
+			</div>
+			<div id="page_top"><a href="#"></a></div>
+		</section>
+	</article>
+	<footer>
+
+	</footer>
+
+	<script src="./js/anime.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="./js/scrollMonitor.js"></script>
+
+	<script src="./js/common.js"></script>
+</body>
+</html>

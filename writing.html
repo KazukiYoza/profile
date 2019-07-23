@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Profile</title>
+	<link rel="stylesheet" media="screen and ( max-width:768px )" href="./css/style_sp.css">
+	<link rel="stylesheet" media="screen and ( min-width:769px )" href="./css/style_pc.css">
+	
+	<!-- jQueryを先に読み込む方がいい。 -->
+	<script type="text/javascript" src="./js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="js/jquery-fadethis-master/dist/jquery.fadethis.min.js"> </script>
+	
+	<!-- CDNでdrawerを導入（jQueryだけでなくプラグインもCDNで導入可能） -->
+	<!-- drawer.css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+	<!-- jquery & iScroll -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+	<!-- drawer.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <section>
+            
+        </section>
+            
+    </header>
+        <article>
+            <section id="sec1">
+                <img src="./img/nishihara.jpg" alt="">
+                <p id="effect_01">てみたーず。<br>
+                Webサイト制作<br>
+                始めました。</p>
+            </section>
+            
+            <section id="sec2"> 
+                <h1>About me</h1>
+                <p>自己紹介</p>
+                <div class="contents profile">
+                    <h2>自己紹介</h2>
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキス</p>
+                </div>
+            </section>
+            
+            <section id="sec3">
+                <h1>Service</h1>
+                <p>サービス内容</p>
+                <p>テキストテキストテキストテキストテキ</p>
+                <div class="contents service-wrapper">
+                    <div class="service-centent effect-fade">
+                        <div class="service-image">
+                            <img src="./img/clock.jpg" alt="">
+                        </div>
+                        <div class="service-txt">
+                            <h2>Webライティング</h2>
+                            <p>テキストテキストテキストテキストテキ</p>
+                        </div>
+                    </div>
+    
+                    <div class="service-content effect-fade">
+                        <div class="service-image">
+                            <img src="./img/idea.jpg" alt="">
+                        </div>
+                        <div class="service-txt">
+                            <h2>Webページ作成</h2>
+                            <p>テキストテキストテキストテキストテキ</p>
+                        </div>
+                    </div>
+                    <div class="service-content effect-fade">
+                        <div class="service-image">
+                            <img src="./img/radio.jpg" alt="">
+                        </div>
+                        <div class="service-txt">
+                            <h2></h2>
+                            <p>テキストテキストテキストテキストテキ</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <footer>
+
+        </footer>
+    <script src="./js/anime.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="./js/scrollMonitor.js"></script>
+	<script src="./js/common.js"></script>
+</body>
+</html>

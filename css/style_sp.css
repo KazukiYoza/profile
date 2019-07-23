@@ -1,0 +1,372 @@
+@charset "UTF-8";
+html {
+	overflow-y: scroll; /* IEへの対応 http://www.htmq.com/style/overflow-y.shtml */
+	/*Internet Explorerが独自に追加したプロパティ*/
+	/*画面に収まりきれなかったときにスクロールして表示することを許可するか否か*/
+}
+body, h1, h2, h3, h4, h5, p, ul, ol, li, dl, dt, dd {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background: #fff;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.4;
+	min-width: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+li {
+	list-style: none;
+}
+a {
+	outline: none;
+	color: inherit;
+	text-decoration: none;
+}
+p{
+	margin:20px 0;
+}
+img {
+	border: 0px;
+	vertical-align: bottom;
+}
+body {
+	font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", "Meiryo", "HGPｺﾞｼｯｸM", "Osaka", "ＭＳ Ｐゴシック", sans-serif, Century Gothic, Arial;
+}
+header{
+	height:60px;
+	width:100%;
+	background-color: white;
+	display: flex;
+	justify-content: flex-end;
+	position: fixed;
+	z-index: 1;
+}
+header .logo{
+	height: 50px;
+	width:100px;
+	margin: 5px auto 5px 5px;
+}
+header .mail{
+	width: 50px;
+	height: 50px;
+	padding: 5px;
+	flex-direction: row;
+	justify-content: flex-end;
+	background-color: black;
+}
+header .menu{
+	width: 50px;
+	height: 50px;
+	padding: 5px;
+	flex-direction: row;
+	justify-content: flex-end;
+	/* background-color: black; */
+}
+.global-nav__item {
+    text-align: center;
+	padding: 0 14px;
+	font-size:15px;
+}
+section{
+	margin-bottom: 20px;
+}
+
+section h1{
+	margin:10px 0px;
+	padding-left:20px;
+	font-size:40px;
+	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	display:inline-block;
+	border-left:10px solid red;
+}
+section h2{
+	margin: 10px auto;
+}
+.contents{
+	width:90%;
+	margin:15px auto;
+}
+.contents img{
+	width:90%;
+	margin: 0 auto;
+}
+
+.service-image img{
+	width:100%;
+}
+
+#sec1{
+	width:100%;
+	height:80vh;
+	/* background: url(../img/nishihara.jpg) no-repeat center center; */
+	background-size: cover;
+	position: relative;
+}
+#sec1 p{
+	font-family:"Yu Gothic","游ゴシック","YuGothic","游ゴシック体";
+	font-weight: 500;
+	font-size:30px;
+	display: block;
+	background-color: #fff;
+	position:absolute;
+	text-align:left;
+	top:300px;
+	left:20px;
+}
+
+#sec1 img{
+	width:90%;
+	height:100%;
+	margin-left: 10%;
+}
+
+#sec2{
+	width:100%;
+	/* height:100vh; */
+}
+
+#sec3{
+	width:100%;
+	height:200vh;
+	background-color: #F5F4F3;
+	color: black;
+}
+
+.service-content{
+	margin:40px 0;
+}
+.test{
+	display:flex;
+	flex-wrap:wrap;
+	width:100%;
+	height:80vh;
+	position:relative;
+}
+
+.btn{
+    margin:10px;
+    padding: 10px 10px 10px 10px;
+    width:250px;
+	height: 50px;
+	background-color: #ff1493;
+	border-radius:10px;
+	line-height: 3rem;
+    color: white;
+    font-size:20px;
+    font-weight:bold;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 0 8px gray;
+    text-decoration: none;
+}
+
+ /* 必要であればリンク要素の重なりのベース順序指定 */
+#m1 a, #m2 a, #m3 a, #m4 a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent:-999px;
+    z-index: 2; /* 必要であればリンク要素の重なりのベース順序指定 */
+}
+
+
+#m1, #m2, #m3, #m4{
+	align-content:flex-start;
+	width: 50%;
+	height: 50%;
+	position:relative;
+}
+#m1::hover{
+	background-image: url("../img/radio.jpg");
+	/* filter: opacity(70%); */
+}
+#m5{
+	width:200px;
+	height:200px;
+	top:33.3%;
+	left:25%;
+	position: absolute;
+	background-color: #fff;
+	box-shadow:1px 1px 5px 0px rgba(0,0,0,0.2);
+	z-index: 3;
+}
+#m5:hover .active{
+	background:url(../img/idea.jpg);
+	background-size: cover;
+	transition:2s;
+}
+#m1 p, #m2 p, #m3 p, #m4 p{
+	display: inline-block;
+	margin: 70% auto;
+	font-size: 16px;
+	font-weight:bold;
+	font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", "Meiryo", "HGPｺﾞｼｯｸM", "Osaka", "ＭＳ Ｐゴシック", sans-serif, Century Gothic, Arial;
+	border-bottom: 2px solid #242527;
+}
+#m5 p{
+	display: inline-block;
+	margin: 30% auto;
+	font-size: 14px;
+	text-align:center;
+	font-weight:bold;
+	font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", "Meiryo", "HGPｺﾞｼｯｸM", "Osaka", "ＭＳ Ｐゴシック", sans-serif, Century Gothic, Arial;
+	border-bottom: 2px solid #242527;
+}
+
+/* ページ上部に戻るボタン */
+#page_top{
+	width: 100px;
+	height: 60px;
+	/* position: fixed; */
+	margin-left: 75%;
+	right: 0;
+	bottom: 0;
+	background: #ef3f98;
+	opacity: 0.6;
+  }
+  #page_top a{
+	position: relative;
+	display: block;
+	width: 100px;
+	height: 60px;
+	text-decoration: none;
+  }
+  #page_top a::before{
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	content: '\f102';
+	font-size: 25px;
+	color: #fff;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: -25px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	text-align: center;
+  }
+  #page_top a::after{
+	content: 'PAGE TOP';
+	font-size: 13px;
+	color: #fff;
+	position: absolute;
+	top: 30px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	text-align: center;
+  }
+
+/* スライド表示させるエフェクト */
+.block-revealer__element {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	pointer-events: none;
+	opacity: 0;
+  }
+
+/* revealContentを最初は消しておく */
+.revealContent {
+    opacity: 0;
+}
+
+/* revealActiveクラスが追加されて.3s後に表示する */
+.revealActive .revealContent {
+    -webkit-transition-delay: .3s;
+         -o-transition-delay: .3s;
+            transition-delay: .3s;
+    opacity: 1;
+}
+
+.revealItem {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+}
+
+/* before擬似要素の黒いblockにanimationをつけておく */
+.revealItem.revealActive::before {
+    -webkit-animation: hideFromLeft .3s forwards, showFromLeft .3s forwards .3s;
+            animation: hideFromLeft .3s forwards, showFromLeft .3s forwards .3s;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    margin: 1px;
+}
+
+/* before擬似要素を左から右にスライドイン */
+@-webkit-keyframes hideFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+@keyframes hideFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* before擬似要素を左から右にスライドアウト */
+@-webkit-keyframes showFromLeft {
+    0% {
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+    }
+    100% {
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+    }
+}
+
+@keyframes showFromLeft {
+    0% {
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+    }
+    100% {
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+    }
+} */
+
+/* 画像を使うときはvertical-align bottomをしないと下に余白ができてしまうので注意！！ */
+.revealImg {
+    width: 300px;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    vertical-align: bottom;
+}
+
+/* ふわっとアニメーション */
+.effect-fade {
+	opacity : 0;
+	transform : translate(0, 45px);
+	transition : all 1.5s;
+	}
+	
+	.effect-fade.effect-scroll {
+	opacity : 1;
+	transform : translate(0, 0);
+	}
